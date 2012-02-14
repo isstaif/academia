@@ -34,4 +34,6 @@ describe Material do
     invalid_pdf_url_material.should_not be_valid
   end
   
+  it "should have a valid pages format if exists"
+  
 end
