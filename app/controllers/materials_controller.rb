@@ -3,4 +3,8 @@ class MaterialsController < ApplicationController
     @material = Material.find(params[:id])
   end
   
+  def new
+    @material = Material.new
+  end
+  
 end
