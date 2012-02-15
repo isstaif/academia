@@ -1,7 +1,16 @@
 class MaterialsController < ApplicationController
+  def index
+    @materials = Material.all
+  end
+  
   def show    
-    @material = Material.find(params[:id])
-    @title = @material.title
+    @material = Material.find_by_id(params[:id])
+    if @material.nil?
+      flash[:error] = "The material you ordered was not found!"
+      redirect_to :action => :index
+    else    
+      @title = @material.title
+    end
   end
   
   def new
