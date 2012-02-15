@@ -1,4 +1,7 @@
 Academia::Application.routes.draw do
+  
+  resources :materials
+  
   get "pages/home"
 
   get "pages/about"
