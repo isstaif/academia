@@ -1,6 +1,6 @@
 <h1>Add a new material!</h1>
 
-<%= form_for(@material) do |f| %>
+<%= form_for(@material, :html => { :multipart => true }) do |f| %>
   <% if @material.errors.any? %>
   	<div id="error_explanation">
   	  <p><%= pluralize(@material.errors.count, "error") %> prohibited from saving this material:</p>  
@@ -20,6 +20,10 @@
   	<%= f.label :description%><br />
   	<%= f.text_area :description %>
   </div>
+  <div class="field">
+  	<%= f.file_field :pdf %>
+  </div>
+  
     <div class="actions">
   	<%= f.submit %>
   </div>

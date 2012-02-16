@@ -19,8 +19,8 @@ class MaterialsController < ApplicationController
   end
   
   def create
-    @material = Material.new(params[:material])
-    if @material.save
+    @material = Material.create(params[:material])
+    if @material.valid?
       flash[:success] =  "Material created successfully!"
       redirect_to @material
     else
