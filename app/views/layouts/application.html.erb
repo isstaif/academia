@@ -18,21 +18,24 @@
 </head>
 <body>
 <div class="container">	
-<header class="span-17">
-	<nav class="round">
-	  <ul>
-	    <li><%= link_to "Home", pages_home_path %></li>
-	    <li><%= link_to "About", pages_about_path %></li>
-	    <li><%= link_to "Contact", pages_contact_path %></li>
-	  </ul>
-	</nav>
-    <div class="span-4">           
+	<div class ="span-17">
+		<nav class="round" style = "margin-top: 1em;">
+		  <ul>
+		    <li><%= link_to "Home", pages_home_path %></li>
+		    <li><%= link_to "About", pages_about_path %></li>
+		    <li><%= link_to "Contact", pages_contact_path %></li>
+		  </ul>
+		</nav>
+	</div>
+	
+<header class="span-17 round ">
+    <div class="span-3">           
       <%= image_tag("rickvanderzwet_mortarboard.png.jpeg", :width => 100 ,:alt => "Sample App", :class => "round") %>				
     </div>    
-    <div class="span-12 ">  
+    <div class="span-13" id="text-header">  
 	 	<h1>Academia</h1>
 	 	<p>a simple rails app to manage your academic papers</p>
-    </div>	   	
+    </div>
 </header>
 <div class="span-17">
 	<section class="round">

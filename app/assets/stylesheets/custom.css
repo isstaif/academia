@@ -3,16 +3,28 @@
 }
 
 body {
-  background: #FF7373; 
+  background: #BF3030; 
 }
 
 header {
+  margin-top: 1em;
   padding-top: 20px;
+  background: #006363  ;
+  color: white;
 }
 
-header img {
-  padding: 1em;
-  background: #FFB273;
+header h1 {
+  color: white;	
+}
+
+header img {  
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+#text-header {
+  margin-left: 1em;
+ color: white;
 }
 
 section {
@@ -24,6 +36,8 @@ section {
 
 section h1 {
   font-size: 200%;
+  color: #006363;		
+
 }
 
 /* Links */
