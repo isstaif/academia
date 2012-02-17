@@ -42,7 +42,12 @@ a:visited {
   color: #A60000;
 }
 
+.site_info {
+	
+}
+
 /* Navigation */
+
 
 nav {
   float: right;
@@ -86,7 +91,7 @@ nav ul li a:hover {
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  
   margin-left: auto;
   margin-right: auto;
 }

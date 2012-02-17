@@ -10,31 +10,43 @@
 	<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
 	
 	<%= stylesheet_link_tag 'custom', :media => 'screen' %>
+	
+
 
   <%= csrf_meta_tags %>
   
 </head>
 <body>
 
-    <div class="container">
-		<header>
-		<%= image_tag("academic.gif", :width => 150 ,:alt => "Sample App", :class => "round") %>
-		<nav class="round">
-		  <ul>
-		    <li><%= link_to "Home", pages_home_path %></li>
-		    <li><%= link_to "About", pages_about_path %></li>
-		    <li><%= link_to "Contact", pages_contact_path %></li>
-		  </ul>
-		</nav>
-		</header>
+<div class="container">
+	
+<header class="span-17">
+	<nav class="round">
+	  <ul>
+	    <li><%= link_to "Home", pages_home_path %></li>
+	    <li><%= link_to "About", pages_about_path %></li>
+	    <li><%= link_to "Contact", pages_contact_path %></li>
+	  </ul>
+	</nav>
+    <div class="span-4">           
+      <%= image_tag("rickvanderzwet_mortarboard.png.jpeg", :width => 100 ,:alt => "Sample App", :class => "round") %>				
+    </div>    
+    <div class="span-12 ">  
+	 	<h1>Academia</h1>
+	 	<p>a simple rails app to manage your academic papers</p>
+    </div>	   	
+</header>
+<div class="span-17">
 	<section class="round">
 		<% flash.each do |key, value| %>
-			<div class="flash <%= key %>"><%= value %></div>
+		<div class="flash <%= key %>"><%= value %></div>
 		<% end %>
 		<%= yield %>
-	</section>
-    <footer>
-	  <nav class="round">
+	</section>		
+</div>
+<div class="span-17">
+	<footer>
+	  <nav class=" round">
 	    <ul>
 	      <li><%= link_to "About", '#' %></li>
 	      <li><%= link_to "Contact", '#' %></li>
@@ -43,7 +55,15 @@
 	    </ul>
 	  </nav>
 	</footer>
+</div>
+<div class="span-17 last">
+	<div class="box round" style="margin-top: 1em;">		
 	<%= debug(params) if Rails.env.development? %>
-    </div>
+	</div>
+</div>
+
+
+
+
 </body>
 </html>
