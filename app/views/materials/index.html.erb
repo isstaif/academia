@@ -1,7 +1,3 @@
 <h1>All the materials!</h1>
 <hr />
-<% @materials.each do |material|%>
-	<p><b><%= material.title %></b></p>
-	<p><%= material.description %></p>
-	<hr />
-<% end %>
+<%= render @materials, :spacer_template => "materials_spacer" %>

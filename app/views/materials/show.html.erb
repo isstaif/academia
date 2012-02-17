@@ -1,5 +1,6 @@
 <h1><%= @material.title %></h1>
 <p><%= @material.description %></p>
 
-<p>URL: <%= @material.pdf.url %></p>
+<p><%= link_to "Download", @material.pdf.url %></p>
+
 

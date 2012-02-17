@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #cff;
+  background: #FF7373; 
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: #FFB273;
 }
 
 section {
@@ -29,17 +29,17 @@ section h1 {
 /* Links */
 
 a {
-  color: #09c;
+  color: #A60000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #069;
+  color: #BF3030;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #069;
+  color: #A60000;
 }
 
 /* Navigation */
@@ -49,7 +49,7 @@ nav {
 }
 
 nav {
-  background-color: white;
+  background-color: #FFB273;
   padding: 0 0.7em;
   white-space: nowrap;
 }
@@ -70,9 +70,6 @@ nav ul li a {
   font-weight: bold;
 }
 
-nav ul li a:visited {
-  color: #09c;
-}
 
 nav ul li a:hover {
   text-decoration: underline;
