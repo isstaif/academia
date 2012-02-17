@@ -1,4 +1,6 @@
 <h1><%= @material.title %></h1>
+<p>Published: <%= @material.publication_date %></p>
+
 <p><%= @material.description %></p>
 
 <p><%= link_to "Download", @material.pdf.url %></p>
